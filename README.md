@@ -19,7 +19,7 @@
       <br>
       <!-- Botões de Redes Sociais / Call to Action -->
       <a href="https://linkedin.com" target="_blank"><img src="https://shields.io" target="_blank"></a>
-      <a href="https://mailto:seu-email@gmail.com" target="_blank"><img src="https://shields.io" target="_blank"></a>
+      <a href="https://mailto:rafael,machado@gmail.com" target="_blank"><img src="https://shields.io" target="_blank"></a>
     </td>
     <td width="40%" align="center" valign="middle">
       <!-- Imagem Lateral ou GIF de Demonstração -->
