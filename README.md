@@ -10,7 +10,7 @@
 
 <hr>
 
-<!-- SEÇÃO SOBRE MIM (Layout em Duas Colunas usando Tabela) -->
+<!-- SEÇÃO sobre o colegio (Layout em Duas Colunas usando Tabela) -->
 <table>
   <tr>
     <td width="60%" valign="top">
