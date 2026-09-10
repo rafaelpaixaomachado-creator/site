@@ -15,7 +15,7 @@
   <tr>
     <td width="60%" valign="top">
       <h3>🚀 Sobre o colegio/h3>
-      <p>E o colewgio concorrer o titulo de melhor dessempenho em 2023, e comemorando seus 13 anos de ensino e dedicação do colegio estadual Prof Amorim Carvalho EFM</p>
+      <p>E o colewgio concorrer o titulo de melhor dessempenho em 2023, e comemorando seus 13 anos de ensino e dedicação do colegio estadual Prof Amorim Carvalho EFM/p>
       <br>
       <!-- Botões de Redes Sociais / Call to Action -->
       <a href="https://linkedin.com" target="_blank"><img src="https://shields.io" target="_blank"></a>
