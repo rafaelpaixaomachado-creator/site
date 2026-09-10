@@ -90,3 +90,9 @@
 
 </div>
 
+site/
+├── index.html
+└── img/
+    ├── img pro site escolar(1).jfif
+    └── coding.gif
+src="img/img pro site escolar(1).jfif"

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Colégio Estadual Prof. Amorim Carvalho EFM</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f7fb;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: min(1100px, 92%);
+      margin: 30px auto;
+    }
+
+    /* CABEÇALHO */
+    .header {
+      overflow: hidden;
+      border-radius: 18px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+      background: white;
+    }
+
+    .header img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .typing {
+      text-align: center;
+      padding: 25px 10px;
+    }
+
+    .typing h1 {
+      color: #1769aa;
+      margin: 0;
+      font-size: clamp(22px, 4vw, 36px);
+    }
+
+    .typing p {
+      color: #666;
+      margin: 8px 0 0;
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid #ddd;
+      margin: 35px 0;
+    }
+
+    /* CARDS */
+    .card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 16px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+      margin-bottom: 25px;
+    }
+
+    h2, h3 {
+      color: #1769aa;
+      margin-top: 0;
+    }
+
+    /* TABELA */
+    .table-container {
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 650px;
+    }
+
+    th,
+    td {
+      padding: 14px;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+
+    th {
+      background: #1769aa;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background: #f8fbff;
+    }
+
+    .status-ok {
+      color: #16803c;
+      font-weight: bold;
+    }
+
+    .status-pendente {
+      color: #b77900;
+      font-weight: bold;
+    }
+
+    /* SOBRE */
+    .sobre {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .sobre-imagem {
+      text-align: center;
+    }
+
+    .sobre-imagem img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 15px;
+    }
+
+    /* BOTÕES */
+    .botoes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .botao {
+      display: inline-block;
+      padding: 11px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+
+    .botao:hover {
+      transform: translateY(-2px);
+      opacity: 0.9;
+    }
+
+    .linkedin {
+      background: #0a66c2;
+    }
+
+    .email {
+      background: #555;
+    }
+
+    .github {
+      background: #24292e;
+    }
+
+    /* TECNOLOGIAS */
+    .tecnologias {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .tech {
+      background: #eef5ff;
+      color: #1769aa;
+      border: 1px solid #cfe2ff;
+      padding: 10px 15px;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    /* ESTATÍSTICAS */
+    .estatisticas {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .stat {
+      background: linear-gradient(135deg, #1769aa, #0d47a1);
+      color: white;
+      padding: 25px;
+      border-radius: 14px;
+      text-align: center;
+    }
+
+    .stat .numero {
+      font-size: 36px;
+      font-weight: bold;
+      display: block;
+    }
+
+    /* RODAPÉ */
+    footer {
+      text-align: center;
+      background: #1769aa;
+      color: white;
+      padding: 25px;
+      border-radius: 15px;
+      margin-top: 30px;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    /* RESPONSIVO */
+    @media (max-width: 700px) {
+      .sobre {
+        grid-template-columns: 1fr;
+      }
+
+      .estatisticas {
+        grid-template-columns: 1fr;
+      }
+
+      .container {
+        width: 94%;
+        margin: 15px auto;
+      }
+
+      .card {
+        padding: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="container">
+
+    <!-- CABEÇALHO -->
+    <header class="header">
+
+      <!-- Coloque a imagem dentro da pasta img -->
+      <img
+        src="img/img pro site escolar(1).jfif"
+        alt="Imagem do Colégio Estadual Prof. Amorim Carvalho"
+      >
+
+      <div class="typing">
+        <h1>Colégio Estadual Prof. Amorim Carvalho EFM</h1>
+        <p>Educação, dedicação e futuro.</p>
+      </div>
+
+    </header>
+
+    <hr>
+
+    <!-- LISTA DE ALUNOS -->
+    <section class="card">
+
+      <h3>📋 Lista de Alunos</h3>
+
+      <div class="table-container">
+        <table>
+
+          <thead>
+            <tr>
+              <th>Matrícula</th>
+              <th>Nome do Aluno</th>
+              <th>Turma / Ano</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <tr>
+              <td>202601</td>
+              <td>Ana Silva</td>
+              <td>1º Ano EM</td>
+              <td class="status-ok">🟢 Matriculado</td>
+            </tr>
+
+            <tr>
+              <td>202602</td>
+              <td>Carlos Souza</td>
+              <td>2º Ano EM</td>
+              <td class="status-pendente">🟡 Pendente</td>
+            </tr>
+
+          </tbody>
+
+        </table>
+      </div>
+
+    </section>
+
+    <hr>
+
+    <!-- SOBRE O COLÉGIO -->
+    <section class="card">
+
+      <div class="sobre">
+
+        <div>
+
+          <h3>🚀 Sobre o Colégio</h3>
+
+          <p>
+            O Colégio Estadual Prof. Amorim Carvalho EFM
+            comemora seus 13 anos de ensino e dedicação,
+            buscando sempre oferecer uma educação de qualidade
+            para seus alunos.
+          </p>
+
+          <p>
+            Em 2023, o colégio concorreu ao título de
+            melhor desempenho, demonstrando o compromisso
+            da instituição com a educação.
+          </p>
+
+          <div class="botoes">
+
+            <a
+              class="botao linkedin"
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+
+            <a
+              class="botao email"
+              href="mailto:rafael.machado@gmail.com"
+            >
+              ✉️ E-mail
+            </a>
+
+            <a
+              class="botao github"
+              href="https://github.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+
+          </div>
+
+        </div>
+
+        <div class="sobre-imagem">
+
+          <!-- Se quiser usar GIF, coloque-o na pasta img -->
+          <img
+            src ="img pro site escolar(1).jfif"
+"
+            alt="Animação relacionada à programação"
+          >
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <hr>
+
+    <!-- TECNOLOGIAS -->
+    <section class="card">
+
+      <h3>🛠️ Stack Tecnológica</h3>
+
+      <p>
+        Tecnologias e ferramentas utilizadas no desenvolvimento
+        deste projeto:
+      </p>
+
+      <div class="tecnologias">
+
+        <span class="tech">HTML5</span>
+        <span class="tech">CSS3</span>
+        <span class="tech">JavaScript</span>
+        <span class="tech">Web Components</span>
+        <span class="tech">Git</span>
+        <span class="tech">GitHub</span>
+
+      </div>
+
+    </section>
+
+    <hr>
+
+    <!-- ESTATÍSTICAS -->
+    <section class="card">
+
+      <h3>📊 Estatísticas</h3>
+
+      <div class="estatisticas">
+
+        <div class="stat">
+          <span class="numero">13</span>
+          <span>Anos de ensino</span>
+        </div>
+
+        <div class="stat">
+          <span class="numero">2</span>
+          <span>Alunos cadastrados</span>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer>
+
+      <p>
+        Feito com 💻 por <strong>Rafael</strong>.
+        Desenvolvido com HTML5 e CSS3.
+      </p>
+
+    </footer>
+
+  </main>
+
+</body>
+</html>
