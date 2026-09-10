@@ -15,8 +15,7 @@
   <tr>
     <td width="60%" valign="top">
       <h3>🚀 Sobre o colegio/h3>
-      <p>Escreva aqui um parágrafo curto e chamativo sobre você ou seu projeto, simulando a seção 'About' de um site institucional.</p>
-      <p>Focado em criar código limpo, interfaces fluidas e arquiteturas escaláveis.</p>
+      <p>E o colewgio concorrer o titulo de melhor dessempenho em 2023, e comemorando seus 13 anos de ensino e dedicação do colegio estadual Prof Amorim Carvalho EFM</p>
       <br>
       <!-- Botões de Redes Sociais / Call to Action -->
       <a href="https://linkedin.com" target="_blank"><img src="https://shields.io" target="_blank"></a>
