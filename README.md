@@ -1,6 +1,6 @@
 <!-- CABEÇALHO (Estilo Hero Section de Site) -->
 <div align="center">
-  <img src="https://vercel.app[Seu%20Nome]!&fontSize=40&animation=fadeIn" width="100%" />
+  <img src="img pro site escolar(1).jfif" width="100%" />
   
   <br>
   
