@@ -1,5 +1,4 @@
-<!-- Envoltório principal para centralizar tudo e limitar a largura máxima do site -->
-<div align="center" style="max-width: 900px; margin: 0 auto; padding: 20px;">
+
 
   <!-- CABEÇALHO -->
   <img src="img pro site escolar(1).jfif" width="100%" alt="Header Escolar" />
