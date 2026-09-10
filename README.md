@@ -11,7 +11,36 @@
 <hr>
 
 <!-- SEÇÃO sobre o colegio (Layout em Duas Colunas usando Tabela) -->
-<table>
+<table><table border="1">
+  <thead>
+    <!-- Linha com os títulos das colunas -->
+    <tr>
+      <th>Matrícula</th>
+      <th>Nome do Aluno</th>
+      <th>Turma / Ano</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Linha com os dados do Aluno 1 -->
+    <tr>
+      <td>202601</td>
+      <td>Ana Silva</td>
+      <td>1º Ano EM</td>
+      <td>Matriculado</td>
+    </tr>
+    <!-- Linha com os dados do Aluno 2 -->
+    <tr>
+      <td>202602</td>
+      <td>Carlos Souza</td>
+      <td>2º Ano EM</td>
+      <td>Pendente</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
   <tr>
     <td width="60%" valign="top">
       <h3>🚀 Sobre o colegio/h3>
