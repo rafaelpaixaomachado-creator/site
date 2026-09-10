@@ -62,5 +62,5 @@
 
 <!-- RODAPÉ -->
 <div align="center">
-  <p>Feito com 💻 por [Rafael ]. Desenvolvido no estilo Web Component.</p>
+  <p>Feito com 💻 por [Rafael]. Desenvolvido no estilo Web Component.</p>
 </div>
