@@ -14,7 +14,7 @@
 <table>
   <tr>
     <td width="60%" valign="top">
-      <h3>🚀 Sobre o colegio</h3>
+      <h3>🚀 Sobre o colegio/h3>
       <p>Escreva aqui um parágrafo curto e chamativo sobre você ou seu projeto, simulando a seção 'About' de um site institucional.</p>
       <p>Focado em criar código limpo, interfaces fluidas e arquiteturas escaláveis.</p>
       <br>
