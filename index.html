@@ -451,28 +451,7 @@
         }
       }
 
-      // Cria o item na lista
-      const li = document.createElement('li');
-      li.dataset.matricula = matricula;
-      li.innerHTML = `
-        <span><strong>${nome}</strong> — ${serie} (Mat. ${matricula})</span>
-        <span>
-          <span class="status">Renovada</span>
-          <button class="btn btn-secondary" style="padding:5px 12px;font-size:.85rem;margin-left:8px;" onclick="removerMatricula(this)">Remover</button>
-        </span>
-      `;
-      itensMatriculas.appendChild(li);
-
-      // Mostra a lista
-      listaMatriculas.style.display = 'block';
-
-      // Mensagem de sucesso
-      exibirMensagem('✅ Matrícula de ' + nome + ' renovada com sucesso!', 'sucesso');
-
-      // Limpa o formulário
-      form.reset();
-    });
-
+      
     // ===== FUNÇÃO: REMOVER MATRÍCULA =====
     function removerMatricula(botao) {
       const li = botao.closest('li');
@@ -495,7 +474,7 @@
 
     // ===== FUNÇÃO: SUPORTE =====
     function mostrarSuporte() {
-      exibirMensagem('📞 Suporte: (11) 99999-9999 — email: suporte@escola.com', 'info');
+      exibirMensagem('📞 Suporte: (11) 99999-9999 — email: suporte@colegio.est.prof.Amorim de Castro.com', 'info');
     }
   </script>
 
