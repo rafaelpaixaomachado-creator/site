@@ -41,15 +41,8 @@
       margin: 0 auto 15px;
     }
 
-    .header h1 {
-      margin: 0 0 8px;
-      font-size: 2rem;
-    }
-
-    .header p {
-      margin: 0;
-      opacity: .9;
-    }
+    .header h1 { margin: 0 0 8px; font-size: 2rem; }
+    .header p { margin: 0; opacity: .9; }
 
     /* SEÇÕES */
     .card {
@@ -67,17 +60,14 @@
       padding-bottom: 10px;
     }
 
-    /* GALERIA: COLÉGIO E ALUNOS */
+    /* GALERIA */
     .galeria {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 20px;
     }
 
-    .galeria figure {
-      margin: 0;
-      text-align: center;
-    }
+    .galeria figure { margin: 0; text-align: center; }
 
     .galeria img {
       width: 100%;
@@ -98,6 +88,162 @@
     @media (max-width: 600px) {
       .galeria { grid-template-columns: 1fr; }
     }
+
+    /* FORMULÁRIO DE MATRÍCULA */
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 6px;
+      color: #1769aa;
+      font-size: .95rem;
+    }
+
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid #cdd8e3;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-family: inherit;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus {
+      outline: none;
+      border-color: #1769aa;
+      box-shadow: 0 0 0 3px rgba(23, 105, 170, .15);
+    }
+
+    /* BOTÕES */
+    .btn {
+      display: inline-block;
+      padding: 12px 22px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background .2s, transform .1s;
+      font-family: inherit;
+    }
+
+    .btn:active { transform: scale(.97); }
+
+    .btn-primary {
+      background: #1769aa;
+      color: white;
+    }
+
+    .btn-primary:hover { background: #12548b; }
+
+    .btn-secondary {
+      background: #e3eef8;
+      color: #1769aa;
+      margin-left: 8px;
+    }
+
+    .btn-secondary:hover { background: #cfe1f2; }
+
+    /* MENSAGENS */
+    .mensagem {
+      margin-top: 15px;
+      padding: 12px 16px;
+      border-radius: 8px;
+      font-weight: bold;
+      display: none;
+    }
+
+    .mensagem.sucesso {
+      background: #e1f5e6;
+      color: #1e7a3c;
+      border-left: 4px solid #1e7a3c;
+    }
+
+    .mensagem.erro {
+      background: #fdeaea;
+      color: #b32d2d;
+      border-left: 4px solid #b32d2d;
+    }
+
+    .mensagem.info {
+      background: #e3eef8;
+      color: #1769aa;
+      border-left: 4px solid #1769aa;
+    }
+
+    /* LISTA DE MATRÍCULAS */
+    .lista-matriculas {
+      margin-top: 20px;
+      border-top: 1px dashed #cdd8e3;
+      padding-top: 15px;
+    }
+
+    .lista-matriculas h3 {
+      color: #1769aa;
+      margin: 0 0 10px;
+      font-size: 1.1rem;
+    }
+
+    .lista-matriculas ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .lista-matriculas li {
+      background: #f6f9fc;
+      padding: 10px 14px;
+      border-radius: 8px;
+      margin-bottom: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .lista-matriculas li .status {
+      font-size: .85rem;
+      padding: 3px 10px;
+      border-radius: 12px;
+      background: #e1f5e6;
+      color: #1e7a3c;
+      font-weight: bold;
+    }
+
+    /* AJUDA / FAQ */
+    .faq-item {
+      border-bottom: 1px solid #eef3f8;
+      padding: 12px 0;
+    }
+
+    .faq-item:last-child { border-bottom: none; }
+
+    .faq-item h4 {
+      margin: 0 0 6px;
+      color: #1769aa;
+      font-size: 1rem;
+    }
+
+    .faq-item p {
+      margin: 0;
+      font-size: .95rem;
+      color: #444;
+    }
+
+    .ajuda-extra {
+      margin-top: 20px;
+      background: #e3eef8;
+      padding: 15px 18px;
+      border-radius: 10px;
+    }
+
+    .ajuda-extra p { margin: 0 0 10px; font-weight: bold; color: #1769aa; }
 
     /* HABILIDADES */
     .skills {
@@ -136,16 +282,8 @@
       box-shadow: 0 6px 18px rgba(23, 105, 170, .15);
     }
 
-    .project h3 {
-      margin: 0 0 8px;
-      font-size: 1.1rem;
-    }
-
-    .project a {
-      color: #1769aa;
-      font-weight: bold;
-      text-decoration: none;
-    }
+    .project h3 { margin: 0 0 8px; font-size: 1.1rem; }
+    .project a { color: #1769aa; font-weight: bold; text-decoration: none; }
 
     /* CONTATO */
     .contact a {
@@ -155,7 +293,6 @@
       text-decoration: none;
       font-weight: bold;
     }
-
     .contact a:hover { text-decoration: underline; }
 
     /* RODAPÉ */
@@ -193,25 +330,89 @@
       </p>
     </section>
 
-    <!-- NOVA SEÇÃO: IMAGEM DO COLÉGIO E IMAGEM DOS ALUNOS -->
+    <!-- GALERIA -->
     <section class="card">
       <h2>Nosso Colégio e Alunos</h2>
       <div class="galeria">
         <figure>
-          <img 
-            src="https://via.placeholder.com/600x400?text=Foto+do+Colegio" 
-            alt="Foto do colégio"
-          >
+          <img src="https://via.placeholder.com/600x400?text=Foto+do+Colegio" alt="Foto do colégio">
           <figcaption>Fachada do colégio</figcaption>
         </figure>
-
         <figure>
-          <img 
-            src="https://via.placeholder.com/600x400?text=Foto+dos+Alunos" 
-            alt="Foto dos alunos"
-          >
+          <img src="https://via.placeholder.com/600x400?text=Foto+dos+Alunos" alt="Foto dos alunos">
           <figcaption>Alunos em atividade</figcaption>
         </figure>
+      </div>
+    </section>
+
+    <!-- RENOVAÇÃO DE MATRÍCULA -->
+    <section class="card">
+      <h2>🔄 Renovar Matrícula</h2>
+      <p>Preencha os dados abaixo para renovar a matrícula do aluno.</p>
+
+      <form id="formMatricula">
+        <div class="form-group">
+          <label for="nomeAluno">Nome do aluno</label>
+          <input type="text" id="nomeAluno" placeholder="Ex: João da Silva" required>
+        </div>
+
+        <div class="form-group">
+          <label for="matricula">Número de matrícula</label>
+          <input type="text" id="matricula" placeholder="Ex: 2025001" required>
+        </div>
+
+        <div class="form-group">
+          <label for="serie">Série / Turma</label>
+          <select id="serie" required>
+            <option value="">-- Selecione --</option>
+            <option>1º Ano - A</option>
+            <option>1º Ano - B</option>
+            <option>2º Ano - A</option>
+            <option>2º Ano - B</option>
+            <option>3º Ano - A</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">✅ Renovar Matrícula</button>
+        <button type="button" class="btn btn-secondary" onclick="limparFormulario()">🧹 Limpar</button>
+      </form>
+
+      <div id="mensagem" class="mensagem"></div>
+
+      <!-- LISTA DE MATRÍCULAS RENOVADAS -->
+      <div class="lista-matriculas" id="listaMatriculas" style="display:none;">
+        <h3>📋 Matrículas Renovadas</h3>
+        <ul id="itensMatriculas"></ul>
+      </div>
+    </section>
+
+    <!-- AJUDA -->
+    <section class="card">
+      <h2>❓ Ajuda</h2>
+
+      <div class="faq-item">
+        <h4>Como renovar a matrícula?</h4>
+        <p>Preencha o nome do aluno, o número de matrícula e selecione a série. Depois clique em <strong>Renovar Matrícula</strong>.</p>
+      </div>
+
+      <div class="faq-item">
+        <h4>Esqueci o número de matrícula. O que fazer?</h4>
+        <p>Procure a secretaria da escola com um documento do aluno para recuperar o número.</p>
+      </div>
+
+      <div class="faq-item">
+        <h4>Qual o prazo para renovação?</h4>
+        <p>A renovação pode ser feita até o último dia útil de janeiro de cada ano letivo.</p>
+      </div>
+
+      <div class="faq-item">
+        <h4>Posso cancelar uma renovação?</h4>
+        <p>Sim. Basta clicar em <strong>Remover</strong> ao lado da matrícula na lista de renovadas.</p>
+      </div>
+
+      <div class="ajuda-extra">
+        <p>💬 Precisa de mais ajuda?</p>
+        <button class="btn btn-primary" onclick="mostrarSuporte()">Falar com o suporte</button>
       </div>
     </section>
 
@@ -262,6 +463,96 @@
     </footer>
 
   </div>
+
+  <script>
+    // ===== VARIÁVEIS =====
+    const form = document.getElementById('formMatricula');
+    const mensagem = document.getElementById('mensagem');
+    const listaMatriculas = document.getElementById('listaMatriculas');
+    const itensMatriculas = document.getElementById('itensMatriculas');
+
+    // ===== FUNÇÃO: EXIBIR MENSAGEM =====
+    function exibirMensagem(texto, tipo) {
+      mensagem.textContent = texto;
+      mensagem.className = 'mensagem ' + tipo;
+      mensagem.style.display = 'block';
+
+      // Esconde a mensagem após 4 segundos
+      setTimeout(() => {
+        mensagem.style.display = 'none';
+      }, 4000);
+    }
+
+    // ===== FUNÇÃO: RENOVAR MATRÍCULA =====
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const nome = document.getElementById('nomeAluno').value.trim();
+      const matricula = document.getElementById('matricula').value.trim();
+      const serie = document.getElementById('serie').value;
+
+      // Validação simples
+      if (!nome || !matricula || !serie) {
+        exibirMensagem('⚠ Preencha todos os campos antes de renovar.', 'erro');
+        return;
+      }
+
+      // Verifica se a matrícula já foi renovada
+      const existentes = itensMatriculas.querySelectorAll('li');
+      for (let item of existentes) {
+        if (item.dataset.matricula === matricula) {
+          exibirMensagem('⚠ Esta matrícula já foi renovada.', 'erro');
+          return;
+        }
+      }
+
+      // Cria o item na lista
+      const li = document.createElement('li');
+      li.dataset.matricula = matricula;
+      li.innerHTML = `
+        <span><strong>${nome}</strong> — ${serie} (Mat. ${matricula})</span>
+        <span>
+          <span class="status">Renovada</span>
+          <button class="btn btn-secondary" style="padding:5px 12px;font-size:.85rem;margin-left:8px;" onclick="removerMatricula(this)">Remover</button>
+        </span>
+      `;
+      itensMatriculas.appendChild(li);
+
+      // Mostra a lista
+      listaMatriculas.style.display = 'block';
+
+      // Mensagem de sucesso
+      exibirMensagem('✅ Matrícula de ' + nome + ' renovada com sucesso!', 'sucesso');
+
+      // Limpa o formulário
+      form.reset();
+    });
+
+    // ===== FUNÇÃO: REMOVER MATRÍCULA =====
+    function removerMatricula(botao) {
+      const li = botao.closest('li');
+      const nome = li.querySelector('strong').textContent;
+      li.remove();
+
+      // Esconde a lista se estiver vazia
+      if (itensMatriculas.children.length === 0) {
+        listaMatriculas.style.display = 'none';
+      }
+
+      exibirMensagem('🗑 Matrícula de ' + nome + ' removida.', 'info');
+    }
+
+    // ===== FUNÇÃO: LIMPAR FORMULÁRIO =====
+    function limparFormulario() {
+      form.reset();
+      mensagem.style.display = 'none';
+    }
+
+    // ===== FUNÇÃO: SUPORTE =====
+    function mostrarSuporte() {
+      exibirMensagem('📞 Suporte: (11) 99999-9999 — email: suporte@escola.com', 'info');
+    }
+  </script>
 
 </body>
 </html>
