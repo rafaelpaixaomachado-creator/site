@@ -67,25 +67,36 @@
       padding-bottom: 10px;
     }
 
-    /* IMAGEM DO COLÉGIO E ALUNOS */
-    .school-figure {
+    /* GALERIA: COLÉGIO E ALUNOS */
+    .galeria {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .galeria figure {
       margin: 0;
       text-align: center;
     }
 
-    .school-figure img {
+    .galeria img {
       width: 100%;
-      max-width: 100%;
+      height: 260px;
+      object-fit: cover;
       border-radius: 12px;
       display: block;
-      margin: 0 auto;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, .1);
     }
 
-    .school-figure figcaption {
+    .galeria figcaption {
       margin-top: 10px;
       font-size: .9rem;
       color: #667;
       font-style: italic;
+    }
+
+    @media (max-width: 600px) {
+      .galeria { grid-template-columns: 1fr; }
     }
 
     /* HABILIDADES */
@@ -182,16 +193,26 @@
       </p>
     </section>
 
-    <!-- NOVA SEÇÃO: IMAGEM DO COLÉGIO E ALUNOS -->
+    <!-- NOVA SEÇÃO: IMAGEM DO COLÉGIO E IMAGEM DOS ALUNOS -->
     <section class="card">
-      <h2>Nossa Escola</h2>
-      <figure class="school-figure">
-        <img 
-          src="https://via.placeholder.com/800x400?text=Colegio+e+Alunos" 
-          alt="Foto do colégio e dos alunos"
-        >
-        <figcaption>Colégio e alunos em atividade</figcaption>
-      </figure>
+      <h2>Nosso Colégio e Alunos</h2>
+      <div class="galeria">
+        <figure>
+          <img 
+            src="https://via.placeholder.com/600x400?text=Foto+do+Colegio" 
+            alt="Foto do colégio"
+          >
+          <figcaption>Fachada do colégio</figcaption>
+        </figure>
+
+        <figure>
+          <img 
+            src="https://via.placeholder.com/600x400?text=Foto+dos+Alunos" 
+            alt="Foto dos alunos"
+          >
+          <figcaption>Alunos em atividade</figcaption>
+        </figure>
+      </div>
     </section>
 
     <!-- HABILIDADES -->
