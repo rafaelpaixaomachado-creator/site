@@ -3,201 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Colégio Estadual Prof. Amorim Carvalho EFM</title>
-   <img src="img-colegio.Londrina-1.jpg" alt="uma placa emcima da potra de entrada com o nome positivo,e um jardim e um corredor com cobertura">
+  <title>Meu Site</title>
+
   <style>
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      background: #f4f7fb;
+      background: #eef3f8;
       color: #222;
-      line-height: 1.6;
     }
 
     .container {
-      width: min(1100px, 92%);
-      margin: 30px auto;
+      width: 90%;
+      max-width: 1100px;
+      margin: 20px auto;
     }
 
     /* CABEÇALHO */
     .header {
-      overflow: hidden;
-      border-radius: 18px;
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
-      background: white;
+      text-align: center;
+      background: #1769aa;
+      color: white;
+      padding: 30px 20px;
+      border-radius: 15px;
     }
 
     .header img {
-      width: 100%;
-      height: auto;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid white;
       display: block;
+      margin: 0 auto 15px;
     }
 
-    .typing {
-      text-align: center;
-      padding: 25px 10px;
-    }
-
-    .typing h1 {
-      color: #1769aa;
+    .header h1 {
+      font-size: 36px;
+      font-weight: bold;
+      display: block;
       margin: 0;
-      font-size: clamp(22px, 4vw, 36px);
-    }
-
-    .typing p {
-      color: #666;
-      margin: 8px 0 0;
-    }
-
-    hr {
-      border: 0;
-      border-top: 1px solid #ddd;
-      margin: 35px 0;
-    }
-
-    /* CARDS */
-    .card {
-      background: #fff;
-      padding: 25px;
-      border-radius: 16px;
-      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-      margin-bottom: 25px;
-    }
-
-    h2, h3 {
-      color: #1769aa;
-      margin-top: 0;
-    }
-
-    /* TABELA */
-    .table-container {
-      overflow-x: auto;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      min-width: 650px;
-    }
-
-    th,
-    td {
-      padding: 14px;
-      border: 1px solid #ddd;
-      text-align: center;
-    }
-
-    th {
-      background: #1769aa;
-      color: white;
-    }
-
-    tr:nth-child(even) {
-      background: #f8fbff;
-    }
-
-    .status-ok {
-      color: #16803c;
-      font-weight: bold;
-    }
-
-    .status-pendente {
-      color: #b77900;
-      font-weight: bold;
     }
 
     /* SOBRE */
     .sobre {
       display: grid;
-      grid-template-columns: 1.5fr 1fr;
-      gap: 30px;
-      align-items: center;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-top: 30px;
     }
 
-    .sobre-imagem {
-      text-align: center;
-    }
-
-    .sobre-imagem img {
-      width: 100%;
-      max-width: 300px;
-      border-radius: 15px;
-    }
-
-    /* BOTÕES */
-    .botoes {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 20px;
-    }
-
-    .botao {
-      display: inline-block;
-      padding: 11px 18px;
-      border-radius: 8px;
-      text-decoration: none;
-      color: white;
-      font-weight: bold;
-      transition: 0.2s;
-    }
-
-    .botao:hover {
-      transform: translateY(-2px);
-      opacity: 0.9;
-    }
-
-    .linkedin {
-      background: #0a66c2;
-    }
-
-    .email {
-      background: #555;
-    }
-
-    .github {
-      background: #24292e;
-    }
-
-    /* TECNOLOGIAS */
-    .tecnologias {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-
-    .tech {
-      background: #eef5ff;
-      color: #1769aa;
-      border: 1px solid #cfe2ff;
-      padding: 10px 15px;
-      border-radius: 8px;
-      font-weight: bold;
+    .sobre .card p {
+      line-height: 1.6;
+      margin: 0;
     }
 
     /* ESTATÍSTICAS */
     .estatisticas {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 20px;
+      margin-top: 30px;
     }
 
-    .stat {
-      background: linear-gradient(135deg, #1769aa, #0d47a1);
-      color: white;
+    .card {
+      background: white;
       padding: 25px;
-      border-radius: 14px;
-      text-align: center;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     }
 
-    .stat .numero {
+    .numero {
       font-size: 36px;
       font-weight: bold;
       display: block;
+      color: #1769aa;
+      margin-bottom: 8px;
     }
 
     /* RODAPÉ */
@@ -210,28 +93,15 @@
       margin-top: 30px;
     }
 
-    footer p {
-      margin: 0;
-    }
+    footer p { margin: 0; }
 
     /* RESPONSIVO */
     @media (max-width: 700px) {
-      .sobre {
-        grid-template-columns: 1fr;
-      }
-
-      .estatisticas {
-        grid-template-columns: 1fr;
-      }
-
-      .container {
-        width: 94%;
-        margin: 15px auto;
-      }
-
-      .card {
-        padding: 18px;
-      }
+      .sobre { grid-template-columns: 1fr; }
+      .estatisticas { grid-template-columns: 1fr; }
+      .container { width: 94%; margin: 15px auto; }
+      .card { padding: 18px; }
+      .header h1 { font-size: 28px; }
     }
   </style>
 </head>
@@ -242,198 +112,46 @@
 
     <!-- CABEÇALHO -->
     <header class="header">
-
       <!-- Coloque a imagem dentro da pasta img -->
-      <img
-        src="img/img pro site escolar(1).jfif"
-        alt="Imagem do Colégio Estadual Prof. Amorim Carvalho"
-      >
-
-      <div class="typing">
-        <h1>Colégio Estadual Prof. Amorim Carvalho EFM</h1>
-        <p>Educação, dedicação e futuro.</p>
-      </div>
-
+      <img src="img/img-principal.jpg" alt="Imagem de destaque">
+      <h1>Título do Meu Site</h1>
     </header>
 
-    <hr>
-
-    <!-- LISTA DE ALUNOS -->
-    <section class="card">
-
-      <h3>📋 Lista de Alunos</h3>
-
-      <div class="table-container">
-        <table>
-
-          <thead>
-            <tr>
-              <th>Matrícula</th>
-              <th>Nome do Aluno</th>
-              <th>Turma / Ano</th>
-              <th>Status</th>
-            </tr>
-          </thead>
-
-          <tbody>
-<main>
-    <h1>Registro de Alunos</h1>
-    
-    <table border="1" style="border-collapse: collapse; width: 100%; text-align: left;">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Nome do Aluno</th>
-                <th>Matrícula</th>
-                <th>Turma</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr><td>01</td><td>Ana Silva</td><td>2026001</td><td>9º Ano A</td></tr>
-            <tr><td>02</td><td>Bruno Santos</td><td>2026002</td><td>9º Ano A</td></tr>
-            <tr><td>03</td><td>Carlos Oliveira</td><td>2026003</td><td>9º Ano B</td></tr>
-            <tr><td>04</td><td>Daniela Souza</td><td>2026004</td><td>9º Ano A</td></tr>
-            <tr><td>05</td><td>Eduardo Lima</td><td>2026005</td><td>9º Ano C</td></tr>
-            <tr><td>06</td><td>Fernanda Costa</td><td>2026006</td><td>9º Ano B</td></tr>
-            <tr><td>07</td><td>Gabriel Almeida</td><td>2026007</td><td>9º Ano A</td></tr>
-            <tr><td>08</td><td>Beatriz Rocha</td><td>2026008</td><td>9º Ano C</td></tr>
-            <tr><td>09</td><td>Henrique Pereira</td><td>2026009</td><td>9º Ano B</td></tr>
-            <tr><td>10</td><td>Isabela Martins</td><td>2026010</td><td>9º Ano A</td></tr>
-            <tr><td>11</td><td>João Ribeiro</td><td>2026011</td><td>9º Ano C</td></tr>
-            <tr><td>12</td><td>Juliana Carvalho</td><td>2026012</td><td>9º Ano B</td></tr>
-            <tr><td>13</td><td>Lucas Ferreira</td><td>2026013</td><td>9º Ano A</td></tr>
-            <tr><td>14</td><td>Mariana Gomes</td><td>2026014</td><td>9º Ano C</td></tr>
-            <tr><td>15</td><td>Nicolas Rodrigues</td><td>2026015</td><td>9º Ano B</td></tr>
-            <tr><td>16</td><td>Olívia Alves</td><td>2026016</td><td>9º Ano A</td></tr>
-            <tr><td>17</td><td>Pedro Barbosa</td><td>2026017</td><td>9º Ano C</td></tr>
-            <tr><td>18</td><td>Rafaela Cardoso</td><td>2026018</td><td>9º Ano B</td></tr>
-            <tr><td>19</td><td>Thiago Melos</td><td>2026019</td><td>9º Ano A</td></tr>
-        </tbody>
-    </table>
-</main>
-
-            <tr>
-              <td>202601</td>
-              <td>Ana Silva</td>
-              <td>1º Ano EM</td>
-              <td class="status-ok">🟢 Matriculado</td>
-            </tr>
-
-            <tr>
-              <td>202602</td>
-              <td>Carlos Souza</td>
-              <td>2º Ano EM</td>
-              <td class="status-pendente">🟡 Pendente</td>
-            </tr>
-
-          </tbody>
-
-        </table>
+    <!-- SOBRE -->
+    <section class="sobre">
+      <div class="card">
+        <p>
+          Escreva aqui o texto de apresentação. Este bloco fica ao lado
+          do segundo em telas grandes e empilhado no celular.
+        </p>
       </div>
-
-    </section>
-
-    <hr>
-
-    <!-- SOBRE O COLÉGIO -->
-    <section class="card">
-
-      <div class="sobre">
-
-        <div>
-
-          <h3>🚀 Sobre o Colégio</h3>
-
-          <p>
-            O Colégio Estadual Prof. Amorim Carvalho EFM
-            comemora seus 13 anos de ensino e dedicação,
-            buscando sempre oferecer uma educação de qualidade
-            para seus alunos.
-          </p>
-
-          <p>
-            Em 2023, o colégio concorreu ao título de
-            melhor desempenho, demonstrando o compromisso
-            da instituição com a educação.
-          </p>
-
-          <div class="botoes">
-
-        
-           
-            </a>
-
-            <a
-              class="botao email"
-              href="mailto:rafael.machado@gmail.com"
-            >
-              ✉️ E-mail
-            </a>
-
-            <a>
-            </a>
-
-          </div>
-
-        </div>
-
-        <div class="sobre-imagem">
-
-          <!-- Se quiser usar GIF, coloque-o na pasta img -->
-          <img
-            src ="img pro site escolar(1).jfif"
-"
-            alt="Animação relacionada à programação"
-          >
-
-        </div>
-
+      <div class="card">
+        <p>
+          Segundo bloco de conteúdo. Use para missão, história, descrição
+          do serviço, etc.
+        </p>
       </div>
-
     </section>
-
-    <hr>
-
-    <!-- TECNOLOGIAS -->
-    <section class="card">
-
-      <h3>🛠️ Stack Tecnológica</h3>
-
-      <p>
-        Tecnologias e ferramentas utilizadas no desenvolvimento
-        deste projeto:
-      </p>
-
-    <hr>
 
     <!-- ESTATÍSTICAS -->
-    <section class="card">
-
-      <h3>📊 Estatísticas</h3>
-
-      <div class="estatisticas">
-
-        <div class="stat">
-          <span class="numero">13</span>
-          <span>Anos de ensino</span>
-        </div>
-
-        <div class="stat">
-          <span class="numero">2</span>
-          <span>Alunos cadastrados</span>
-        </div>
-
+    <section class="estatisticas">
+      <div class="card">
+        <span class="numero">+500</span>
+        Clientes atendidos
       </div>
-
+      <div class="card">
+        <span class="numero">10</span>
+        Anos de experiência
+      </div>
+      <div class="card">
+        <span class="numero">98%</span>
+        Satisfação
+      </div>
     </section>
 
     <!-- RODAPÉ -->
     <footer>
-
-      <p>
-        site do colegio Estd prof Amorim Carvalho EFM 2026.
-      </p>
-
+      <p>&copy; 2026 Meu Site — Todos os direitos reservados.</p>
     </footer>
 
   </main>
